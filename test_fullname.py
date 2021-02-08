@@ -4,9 +4,8 @@ import unittest
 class TestFullname(unittest.TestCase):
     #Tests that invalid input (containing non-alphabetical characters, spaces, etc) raises a TypeValue error. Should return true
     def test_fullname_input(self):
-        self.assertRaises(TypeError, fullname.fullname, 'first124', 'last')
-        self.assertRaises(TypeError, fullname.fullname, "hello ", "world")
-
+        self.assertRaises(TypeError, fullname.fullname, 'first124', 'last ')
+        
     #Tests that the input of the function is a string. Should return true. Python error checking handles this along with code inside
     def test_fullname_input_type(self):
         self.assertRaises(TypeError, fullname.fullname, 3, "name")
